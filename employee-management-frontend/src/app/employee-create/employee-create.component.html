@@ -1,0 +1,26 @@
+<div style="margin-left: 32%;">
+  
+
+<form (ngSubmit)="onSubmit()" style="padding-left: 5px; margin-left: 25px;" >
+  <h1>Create New Employee</h1>
+  <div style="margin-bottom: 5px;">
+    <label for="employee_id">Employee ID:</label>
+    <input type="number" id="employee_id" name="employee_id" [(ngModel)]="employee.employee_id">
+  </div>
+  <div  style="margin-bottom: 5px;">
+    <label for="employee_name">Employee Name:</label>
+    <input type="text" id="employee_name" name="employee_name" [(ngModel)]="employee.employee_name">
+  </div>
+  <div  style="margin-bottom: 5px;">
+    <label for="employee_email">Employee Email:</label>
+    <input type="email" id="employee_email" name="employee_email" [(ngModel)]="employee.employee_email">
+  </div>
+  <div>
+    <label for="employee_manager">Employee Manager:</label>
+    <input type="text" id="employee_manager" name="employee_manager" [(ngModel)]="employee.employee_manager">
+  </div>
+  <button type="submit" style="margin-top: 15px; padding: 5pt;">Submit</button>
+</form>
+
+
+</div>

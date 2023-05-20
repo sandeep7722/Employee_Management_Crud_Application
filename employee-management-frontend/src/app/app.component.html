@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+ 
+ 
+  <h1 style="margin-left: 25%;">Welcome To Employee Management Application</h1>
+  <div style="margin-left: 27%;">
+    <button (click)="goToCreateComponent()">Create Employee</button>
+  
+    <button (click)="goToListComponent()" style="margin-left: 2%;">See Employee List</button>
+    <input type="text" [(ngModel)]="inputValue" style="margin-left: 2%;">
+    <button (click)="submitInput()">See Employee Details By Id</button>
+
+  </div>
+  <!-- <app-employee-update></app-employee-update> -->
+  <router-outlet></router-outlet>
+</body>
+</html>

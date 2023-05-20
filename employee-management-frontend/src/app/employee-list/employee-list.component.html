@@ -1,0 +1,34 @@
+<div style="margin-left: 30%;">
+  
+    <h2 style="margin-left: 16%;">Employee Details</h2>
+
+<table border = "1" cellpadding = "5" cellspacing = "5" style="margin-left: 4%;">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Manager</th>
+      <th>Action1</th>
+      <th>Action2</th>
+      
+     
+    </tr>
+  </thead>
+  <tbody>
+    
+    <tr *ngFor="let employee of employees">
+      <td>{{ employee.employee_id}}</td>
+      <td>{{ employee.employee_name }}</td>
+      <td>{{ employee.employee_email }}</td>
+      <td>{{ employee.employee_manager }}</td>
+      <td><button (click)="deleteEmployee(employee.employee_id)">Delete</button></td>
+      <td><button (click)="goToUpdateComponent(employee.employee_id)" >Update</button></td>
+
+    </tr>
+  </tbody>
+</table> 
+
+
+
+</div>
